@@ -48,5 +48,19 @@
   },
   "peerDependencies": {
     "lodash": "^4.x"
+  },
+  "overrides": {
+    "@babel/traverse": ">=7.23.2",
+    "fsevents": ">=1.2.11",
+    "form-data": ">=2.5.4",
+    "json-schema": ">=0.4.0",
+    "minimist": ">=1.2.6",
+    "mkdirp@0.5.1": {
+      "minimist": "0.2.4"
+    }
+  },
+  "dependencies": {
+    "json-diff-ts": "^4.8.2"
   }
+  
 }
