@@ -58,9 +58,5 @@
     "mkdirp@0.5.1": {
       "minimist": "0.2.4"
     }
-  },
-  "dependencies": {
-    "json-diff-ts": "^4.8.2"
-  }
-  
+  } 
 }
