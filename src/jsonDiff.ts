@@ -371,9 +371,7 @@ export const flattenChangeset = (
       return [
         {
           ...obj,
-          path: valueType === 'Object' || path.endsWith(`[${obj.key}]`)
-            ? path
-            : append(path, obj.key),
+          path: valueType === 'Object' || path.endsWith(`[${obj.key}]`) ? path : append(path, obj.key),
           valueType
         }
       ];
@@ -497,14 +495,12 @@ export const unflattenChanges = (changes: IFlatChange | IFlatChange[]) => {
 
 /** combine a base JSON Path with a subsequent segment */
 function append(basePath: string, nextSegment: string): string {
-  return nextSegment.includes('.')
-    ? `${basePath}[${nextSegment}]`
-    : `${basePath}.${nextSegment}`;
+  return nextSegment.includes('.') ? `${basePath}[${nextSegment}]` : `${basePath}.${nextSegment}`;
 }
 
 /** returns a JSON Path filter expression; e.g., `$.pet[(?name='spot')]` */
 function filterExpression(basePath: string, filterKey: string | FunctionKey, filterValue: string) {
   return typeof filterKey === 'string' && filterKey.includes('.')
     ? `${basePath}[?(@[${filterKey}]='${filterValue}')]`
-    : `${basePath}[?(@.${filterKey}='${filterValue}')]`
+    : `${basePath}[?(@.${filterKey}='${filterValue}')]`;
 }
