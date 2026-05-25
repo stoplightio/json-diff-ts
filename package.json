@@ -6,7 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\" ",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jest.config.json",
     "test:watch": "jest --watch --config jest.config.json",
@@ -44,7 +44,9 @@
     "ts-jest": "^29.4.11",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "@types/istanbul-lib-report": "^3.0.3",
+    "@types/istanbul-reports": "^3.0.4"
   },
   "peerDependencies": {
     "lodash": "^4.x"
