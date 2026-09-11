@@ -59,6 +59,7 @@
     "minimist": "1.2.8",
     "mkdirp@0.5.1": {
       "minimist": "0.2.4"
-    }
+    },
+    "browserslist":"4.28.7"
   }
 }
