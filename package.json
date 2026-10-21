@@ -46,12 +46,21 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^4.5.2",
     "@types/istanbul-lib-report": "^3.0.3",
-    "@types/istanbul-reports": "^3.0.4"
+    "@types/istanbul-reports": "^3.0.4",
+    "@types/node": "20.17.30"
+  },
+  "resolutions": {
+    "handlebars": "^4.7.10",
+    "brace-expansion": "^2.1.6",
+    "js-yaml": "^4.3.2"
   },
   "peerDependencies": {
     "lodash": "^4.x"
   },
   "overrides": {
+    "handlebars": "^4.7.10",
+    "brace-expansion": "^2.1.6",
+    "js-yaml": "^4.3.2",
     "@babel/traverse": "7.29.0",
     "fsevents": "2.3.3",
     "form-data": "4.0.5",
