@@ -61,6 +61,7 @@
       "minimist": "0.2.4"
     },
     "browserslist":"4.28.7",
-    "handlebars": "^4.7.10"
+    "handlebars": "^4.7.10",
+    "brace-expansion": "2.1.7"
   }
 }
